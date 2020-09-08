@@ -1,6 +1,6 @@
 package com.cloud.demo.service.impl;
 
-import com.cloud.demo.dao.AreasDao;
+import com.cloud.demo.mapper.AreasDao;
 import com.cloud.demo.entity.AreasEntity;
 import com.cloud.demo.service.AreasService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.cloud.demo.dao;
+package com.cloud.demo.mapper;
 
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;

@@ -1,6 +1,6 @@
 package com.cloud.demo.service.impl;
 
-import com.cloud.demo.dao.InsertUser;
+import com.cloud.demo.mapper.InsertUser;
 import com.cloud.demo.entity.User;
 import com.cloud.demo.service.InsertUserSer;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,11 +1,10 @@
-package com.cloud.demo.dao;
+package com.cloud.demo.mapper;
 
 import com.cloud.demo.entity.DefectRecord;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 
 import java.util.List;

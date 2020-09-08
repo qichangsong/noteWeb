@@ -1,7 +1,6 @@
-package com.cloud.demo.dao;
+package com.cloud.demo.mapper;
 
 import com.cloud.demo.entity.User;
-import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
