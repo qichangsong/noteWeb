@@ -1,4 +1,4 @@
-package com.cloud.demo.entity;
+package com.cloud.www.entity;
 
 public class DefectRecord {
     Integer id;

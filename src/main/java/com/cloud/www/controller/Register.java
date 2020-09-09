@@ -1,7 +1,7 @@
-package com.cloud.demo.controller;
+package com.cloud.www.controller;
 
-import com.cloud.demo.entity.User;
-import com.cloud.demo.service.impl.InsertUserSerImp;
+import com.cloud.www.entity.User;
+import com.cloud.www.service.impl.InsertUserSerImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -35,8 +35,9 @@ public class Register {
 
     }
 
-    @RequestMapping("show1")
+    @RequestMapping("/show1")
     String show1() {
         return "show1";
     }
+
 }

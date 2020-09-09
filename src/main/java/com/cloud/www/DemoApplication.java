@@ -1,4 +1,4 @@
-package com.cloud.demo;
+package com.cloud.www;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

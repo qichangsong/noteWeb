@@ -1,6 +1,6 @@
-package com.cloud.demo.service;
+package com.cloud.www.service;
 
-import com.cloud.demo.entity.DefectRecord;
+import com.cloud.www.entity.DefectRecord;
 
 import java.util.List;
 

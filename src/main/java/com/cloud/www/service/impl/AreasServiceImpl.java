@@ -1,8 +1,8 @@
-package com.cloud.demo.service.impl;
+package com.cloud.www.service.impl;
 
-import com.cloud.demo.mapper.AreasDao;
-import com.cloud.demo.entity.AreasEntity;
-import com.cloud.demo.service.AreasService;
+import com.cloud.www.mapper.AreasDao;
+import com.cloud.www.entity.AreasEntity;
+import com.cloud.www.service.AreasService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

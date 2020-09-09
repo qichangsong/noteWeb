@@ -1,6 +1,6 @@
-package com.cloud.demo.mapper;
+package com.cloud.www.mapper;
 
-import com.cloud.demo.entity.AreasEntity;
+import com.cloud.www.entity.AreasEntity;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

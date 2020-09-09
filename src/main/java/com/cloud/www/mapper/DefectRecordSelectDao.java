@@ -1,6 +1,6 @@
-package com.cloud.demo.mapper;
+package com.cloud.www.mapper;
 
-import com.cloud.demo.entity.DefectRecord;
+import com.cloud.www.entity.DefectRecord;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;

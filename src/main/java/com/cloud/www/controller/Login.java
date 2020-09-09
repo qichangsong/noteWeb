@@ -1,4 +1,4 @@
-package com.cloud.demo.controller;
+package com.cloud.www.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,4 +10,5 @@ public class Login {
     String login() {
         return "login";
     }
+
 }

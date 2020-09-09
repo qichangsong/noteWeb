@@ -1,6 +1,6 @@
-package com.cloud.demo.service;
+package com.cloud.www.service;
 
-import com.cloud.demo.entity.AreasEntity;
+import com.cloud.www.entity.AreasEntity;
 
 import java.util.List;
 

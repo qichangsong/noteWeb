@@ -1,6 +1,6 @@
-package com.cloud.demo;
+package com.cloud.www;
 
-import com.cloud.demo.service.impl.AreasServiceImpl;
+import com.cloud.www.service.impl.AreasServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

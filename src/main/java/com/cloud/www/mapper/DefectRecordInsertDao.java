@@ -1,4 +1,4 @@
-package com.cloud.demo.mapper;
+package com.cloud.www.mapper;
 
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;

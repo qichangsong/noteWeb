@@ -1,8 +1,8 @@
-package com.cloud.demo.service.impl;
+package com.cloud.www.service.impl;
 
-import com.cloud.demo.mapper.DefectRecordSelectDao;
-import com.cloud.demo.entity.DefectRecord;
-import com.cloud.demo.service.DefectRecordService;
+import com.cloud.www.mapper.DefectRecordSelectDao;
+import com.cloud.www.entity.DefectRecord;
+import com.cloud.www.service.DefectRecordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
