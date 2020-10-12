@@ -10,12 +10,10 @@ import org.springframework.stereotype.Service;
 public class InsertUserSerImp implements InsertUserSer {
     @Autowired
     InsertUser insertUser;
-    @Autowired
-    User user;
+
     @Override
     public User selectOne(String name) {
-        user=insertUser.selectOne(name);
-        return user;
+        return null;
     }
 
     @Override
