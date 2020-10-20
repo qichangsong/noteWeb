@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import sun.misc.Contended;
 
-@RestController
+@Controller
 public class NoteController {
     @Autowired
     NoteContentServiceImp noteContentServiceImp;
@@ -15,6 +15,6 @@ public class NoteController {
     String insertNote(@RequestBody NoteContent noteContent){
          noteContentServiceImp.insertNote(noteContent);
          System.out.println(noteContent.toString());
-         return noteContent.toString();
+         return "insertNote";
     }
 }
