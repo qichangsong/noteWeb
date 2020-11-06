@@ -15,6 +15,7 @@ public class Login {
     @RequestMapping("/login")
     String login(String name,String password) {
         String pw;
+        System.out.println(name+password);
         if(name==null||password==null){
             return "error";
         }else {
