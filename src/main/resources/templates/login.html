@@ -22,14 +22,37 @@
             background-color: #F0F8FF;
         }
     </style>
+    <script language="JavaScript" type="text/JavaScript">
+        <!--
+        function check(form){
+            //检查姓名是否填写
+            var username = form.name.value;
+            if(username.length==0){
+                alert("请填写用户名！");
+//	form.username.focus();
+                return false;
+            }
+            var password = form.password.value;
+            if(password.length==0){
+                alert("请填写密码！");
+//	form.password.focus();
+                return false;
+            }else{
+                form.submit();
+            }
+        }
+        //-->
+    </script>
 </head>
 <body>
+
+
 <div class="box">
-    <form action="/login" method="post">
-        用户名&emsp;<input type="text" id="name">
+    <form action="/login" method="post" onSubmit="return check(this);">
+        用户名&emsp;<input type="text" name="name">
         <br>
         <br>
-        密&emsp;码&emsp;<input type="password" id="password">
+        密&emsp;码&emsp;<input type="password" name="password">
         <br>
         <br>
         <input type="submit" value="登录" style="width: 70px;height: 1.75rem;float: right;"/>

@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Select;
 
 @Mapper
 public interface InsertUser {
-    @Select("select * from user where name=#{name}")
+    @Select("select * from user where name=#{name} limit 0,1")
     User  selectOne(String name);
     @Insert("insert into user(id,name,password values(#{id},#{name},#{password})")
     void  InsertUser(User usr);
