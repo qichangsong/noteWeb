@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import sun.misc.Contended;
 
+import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,9 +23,10 @@ public class NoteController {
          return "insertNote";
     }
     @RequestMapping("/select")
-    String selectNote(){
+    String selectNote(HttpSession session){
         //需要将内容返回给页面，现在还没有处理
         list=noteContentServiceImp.selectNote(1,10);
+        session.setAttribute("contents",list);
         for(NoteContent noteContent :list){
             System.out.println(noteContent.getContent());
         }
