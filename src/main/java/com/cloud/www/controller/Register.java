@@ -24,6 +24,8 @@ public class Register {
             return  "密码不能为空";
         }else {
            s2= insertUserSerImp.selectOne(s).getPassword();
+           System.out.println(s);
+           System.out.println(s2);
            if(s2==null){
                return "账号不存在";
            }else if(s1.equals(s2)) {

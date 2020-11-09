@@ -11,9 +11,10 @@ public class InsertUserSerImp implements InsertUserSer {
     @Autowired
     InsertUser insertUser;
 
+
     @Override
     public User selectOne(String name) {
-        return null;
+        return insertUser.selectOne(name);
     }
 
     @Override

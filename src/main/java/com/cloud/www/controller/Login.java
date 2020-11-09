@@ -25,9 +25,8 @@ public class Login {
         if(name==null||password==null){
             return "error";
         }else {
-        user=insertUserSerImp.selectOne(name);
-        System.out.println(user);
-        pw=user.getPassword();
+        pw=insertUserSerImp.selectOne(name).getPassword();
+     //   System.out.println(user);
         if(pw==null||!(pw.equals(password))){
             return "error";
 
