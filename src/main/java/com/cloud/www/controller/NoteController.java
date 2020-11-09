@@ -7,14 +7,27 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import sun.misc.Contended;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Controller
 public class NoteController {
     @Autowired
     NoteContentServiceImp noteContentServiceImp;
+    List<NoteContent> list=new ArrayList<NoteContent>();
     @PostMapping("/insert")
     String insertNote(@RequestBody NoteContent noteContent){
          noteContentServiceImp.insertNote(noteContent);
          System.out.println(noteContent.toString());
          return "insertNote";
+    }
+    @RequestMapping("/select")
+    String selectNote(){
+        //需要将内容返回给页面，现在还没有处理
+        list=noteContentServiceImp.selectNote(1,10);
+        for(NoteContent noteContent :list){
+            System.out.println(noteContent.getContent());
+        }
+        return "contentDetail";
     }
 }
