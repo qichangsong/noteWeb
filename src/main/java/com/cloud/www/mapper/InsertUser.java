@@ -7,8 +7,8 @@ import org.apache.ibatis.annotations.Select;
 
 @Mapper
 public interface InsertUser {
-    @Select("select * from user where name=#{name}")
-    User  selectOne(String name);
+    @Select("select count(1) from user where name=#{name} and password=#{password}")
+    Integer  selectOne(User user);
     @Insert("insert into user(id,name,password values(#{id},#{name},#{password})")
     void  InsertUser(User usr);
 }

@@ -4,6 +4,7 @@ import com.cloud.www.entity.User;
 import com.cloud.www.service.impl.InsertUserSerImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
@@ -13,27 +14,27 @@ import javax.servlet.http.HttpServletRequest;
 public class Login {
     @Autowired
     InsertUserSerImp insertUserSerImp;
-    User user=new User();
+    User user = new User();
+
     @RequestMapping("/login")
     String login(HttpServletRequest request) {
         String password;
-        String pw;
+        //  String pw;
         String name;
-        password=request.getParameter("password");
-        name=request.getParameter("name");
-        System.out.println(name+password);
-        if(name==null||password==null){
-            return "error";
-        }else {
-        pw=insertUserSerImp.selectOne(name).getPassword();
-     //   System.out.println(user);
-        if(pw==null||!(pw.equals(password))){
-            return "error";
+        password = request.getParameter("password");
+        name = request.getParameter("name");
+        user.setName(name);
+        user.setPassword(password);
+        //   System.out.println(name + password);
+        try {
+            if (insertUserSerImp.selectOne(user) == 1) {
+                    return "success";
+                } else {
+                    return "login";
+                }
 
-        }else{
-            return "success";
-        }
+        } catch (Exception e) {
+            return "login";
         }
     }
-
 }

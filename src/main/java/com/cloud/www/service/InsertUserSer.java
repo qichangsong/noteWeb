@@ -4,6 +4,6 @@ import com.cloud.www.entity.User;
 
 
 public interface InsertUserSer {
-   User selectOne(String name);
+   Integer selectOne(User user);
    void  insertUser(User user);
 }

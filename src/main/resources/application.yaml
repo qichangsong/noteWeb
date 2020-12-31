@@ -5,7 +5,6 @@ spring:
     password: MIN@lan3102
     driver-class-name: com.mysql.cj.jdbc.Driver
   thymeleaf:
-    suffix: .html
     template-loader-path: classpath:/templates/
   mybatis:
     configuration:

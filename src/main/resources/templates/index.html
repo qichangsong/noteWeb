@@ -1,64 +1,63 @@
-
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>小说导航</title>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        .box{
+            width:200px;
+            height: 200px;
+            position: absolute;
+            left:50%;
+            top:50%;
+            margin-left:-100px;
+            margin-top:-100px;
+        }
+        input{
+            width:130px;
+            height:20px;
+        }
+        body{
+            font-size: 16px;
+            background-color: #F0F8FF;
+        }
+    </style>
+    <script language="JavaScript" type="text/JavaScript">
+        <!--
+        function check(form){
+            //检查姓名是否填写
+            var username = form.name.value;
+            if(username.length==0){
+                alert("请填写用户名！");
+//	form.username.focus();
+                return false;
+            }
+            var password = form.password.value;
+            if(password.length==0){
+                alert("请填写密码！");
+//	form.password.focus();
+                return false;
+            }else{
+                form.submit();
+            }
+        }
+        //-->
+    </script>
 </head>
-<body style="font-size: 24px;color:midnightblue;text-align:left;margin-left: 2cm">
-<div>
-    欢迎来到小说导航网，持续更新中……
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+<body>
+
+
+<div class="box">
+    <form action="/login" method="post" onSubmit="return check(this);">
+        用户名&emsp;<input type="text" name="name">
+        <br>
+        <br>
+        密&emsp;码&emsp;<input type="password" name="password">
+        <br>
+        <br>
+        <input type="submit" value="登录" style="width: 70px;height: 1.75rem;float: right;"/>
+    </form>
 </div>
-<div>
-    <a href="http://www.zongheng.com/">纵横小说</a>
-    <br/>
-    <br/>
-</div>
-<div>
-    <a href="http://book.km.com/">七猫小说</a>
-    <br/>
-    <br/>
-</div><div>
-    <a href="https://www.17k.com/">17Kx小说</a>
-    <br/>
-    <br/>
-</div>
-<div>
-    <a href="http://www.yuetutu.com/">笔趣阁小说</a>
-    <br/>
-    <br/>
-</div><div>
-    <a href="http://www.fbook.net/">天下书盟</a>
-    <br/>
-    <br/>
-</div><div>
-    <a href="http://yunqi.qq.com/">云起小说</a>
-    <br/>
-    <br/>
-</div>
-</div><div>
-    <a href="http://www.shuhai.com/">书海小说</a>
-    <br/>
-    <br/>
-</div>
-<div>
-    <a href="http://www.hybooks.cn/">爱阅小说</a>
-    <br/>
-    <br/>
-    </div>
-<div>
-    <a href="https://www.ddshu.net/">豆豆小说</a>
-    <br/>
-    <br/>
-</div>
-<div>
-    <a href="http://www.xiang5.com/">香网</a>
-    <br/>
-    <br/>
-</div>
+
 </body>
 </html>
