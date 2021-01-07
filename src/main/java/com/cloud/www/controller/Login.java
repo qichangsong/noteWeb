@@ -28,13 +28,13 @@ public class Login {
         //   System.out.println(name + password);
         try {
             if (insertUserSerImp.selectOne(user) == 1) {
-                    return "success";
+                    return "contentDetail";
                 } else {
-                    return "login";
+                    return "index";
                 }
 
         } catch (Exception e) {
-            return "login";
+            return "index";
         }
     }
 }
