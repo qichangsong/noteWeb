@@ -9,4 +9,5 @@ public interface InsertUserSer {
    Integer selectOne(User user);
    void  insertUser(User user);
    List<User> selectAll();
+   User selectOne();
 }

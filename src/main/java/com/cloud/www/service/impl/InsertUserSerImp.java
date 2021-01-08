@@ -36,5 +36,11 @@ public class InsertUserSerImp implements InsertUserSer {
         return list;
     }
 
+    @Override
+    public User selectOne() {
+        User user=insertUser.selectOne();
+        return user;
+    }
+
 
 }

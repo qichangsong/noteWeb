@@ -15,4 +15,6 @@ public interface InsertUser {
     void  InsertUser(User usr);
     @Select("select * from user")
     List<User> selectAll();
+    @Select("select * from user where user=#{name}")
+    User selectOne();
 }
