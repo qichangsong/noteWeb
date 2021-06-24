@@ -1,29 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>查询日志详情</title>
-    <style type="text/css">
-        table{
-            border-collapse:collapse;
-        }
-        table tr td{ border: #17b2fd solid 1px; background-color:#EAF2D3; text-align:center; line-height:18px;}
-    </style>
-
+    <meta charset="utf-8">
+    <title>登录</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../static/layui/css/layui.css" media="all">
+    <script src="../js/jquery.min.js" charset="utf-8"></script>
 </head>
 <body>
-详情展示
-<table >
-    <tr>
-        <td style="width: 100px;">类型</td>
-        <td style="width: 50px;" >类型</td>
-        <td style="width: 800px;">详情</td>
-    </tr>
-    <tr th:each="c, State : ${session.contents}">
-        <td style="width: 100px;" th:text="${c.type}">内容1</td>
-        <td style="width: 50px;" th:text="${c.isfix}">2</td>
-        <td style="width: 800px;" th:text="${c.content}">内容3</td>
-    </tr>
-</table>
+<div class="layui-form-mid">
+    <table class="layui-table">
+        <colgroup>
+            <col width="150">
+            <col width="200">
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th>编号</th>
+            <th>所属系统</th>
+            <th>描述</th>
+            <th>录入时间</th>
+            <th>修改时间</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>新运营系统</td>
+            <td>业务问题</td>
+            <td>2021-06-24</td>
+            <td>2021-06-24</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>物流系统</td>
+            <td>推单查询问题</td>
+            <td>2021-06-24</td>
+            <td>2021-06-24</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="../layui/layui.js" charset="utf-8"></script>
+<!-- 注意：如果你直接复制所有代码到本地，上述 JS 路径需要改成你本地的 -->
+
+
 </body>
 </html>
