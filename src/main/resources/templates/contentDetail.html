@@ -28,18 +28,12 @@
         </thead>
         <tbody>
         <tr>
-            <td>1</td>
-            <td>新运营系统</td>
-            <td>业务问题</td>
-            <td>2021-06-24</td>
-            <td>2021-06-24</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>物流系统</td>
-            <td>推单查询问题</td>
-            <td>2021-06-24</td>
-            <td>2021-06-24</td>
+            <tr th:each="u : ${list}">
+            <th th:text="${u.id}"></th>
+            <th th:text="${u.system}"></th>
+            <th th:text="${u.detail}"></th>
+            <th th:text="${u.createtime}"></th>
+            <th th:text="${u.modifitime}"></th>
         </tr>
         </tbody>
     </table>
